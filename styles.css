@@ -20,6 +20,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -103,11 +104,20 @@ h1 {
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  transition: transform .14s ease, box-shadow .14s ease, background .2s ease;
+  transition: transform .18s ease, box-shadow .2s ease, background .22s ease, border-color .22s ease, color .22s ease;
 }
 
 .btn:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0) scale(0.985);
+}
+
+.btn:focus-visible {
+  outline: 2px solid rgba(0, 127, 115, 0.35);
+  outline-offset: 2px;
 }
 
 .btn-primary {
@@ -173,6 +183,13 @@ h1 {
   border-radius: var(--radius);
   padding: 20px;
   box-shadow: 0 4px 16px rgba(8, 38, 38, 0.05);
+  transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #b7d7d1;
+  box-shadow: 0 12px 26px rgba(8, 38, 38, 0.10);
 }
 
 .card p {
@@ -221,11 +238,18 @@ h1 {
   font-weight: 600;
   cursor: pointer;
   text-align: left;
+  transition: transform .18s ease, border-color .22s ease, background .22s ease, box-shadow .22s ease;
 }
 
 .intent-btn:hover {
   border-color: #95c9bf;
   background: #f4fbf9;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(7, 42, 45, 0.08);
+}
+
+.intent-btn:active {
+  transform: translateY(0) scale(0.99);
 }
 
 .intent-btn.active {
@@ -314,6 +338,11 @@ h1 {
 
 .cta {
   text-align: center;
+  background: linear-gradient(180deg, #ffffff, #f7fbfa);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 34px 22px;
+  box-shadow: 0 8px 22px rgba(8, 38, 38, 0.07);
 }
 
 .footer {
@@ -342,6 +371,9 @@ h1 {
 }
 
 @media (max-width: 520px) {
+  .btn:active {
+    transform: scale(0.98);
+  }
   .hero {
     padding-top: 16px;
   }
@@ -373,5 +405,13 @@ h1 {
 
   .hero-metrics li {
     width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
   }
 }
