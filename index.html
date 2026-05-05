@@ -1,0 +1,103 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentalBot SCZ | Agenda dental por WhatsApp</title>
+  <meta name="description" content="DentalBot SCZ automatiza captación, agenda y recordatorios para clínicas dentales en Santa Cruz." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <div class="brand">DentalBot <span>SCZ</span></div>
+      <a class="btn btn-outline" href="#demo">Ver demo</a>
+    </nav>
+
+    <section class="hero-content container">
+      <p class="eyebrow">Para clínicas dentales en Santa Cruz</p>
+      <h1>Más pacientes confirmados, menos tiempo en chat.</h1>
+      <p class="lead">
+        DentalBot atiende consultas, capta datos, agenda citas y envía recordatorios automáticos por WhatsApp.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#demo">Probar flujo</a>
+        <a class="btn btn-ghost" href="#beneficios">Ver beneficios</a>
+      </div>
+      <ul class="hero-metrics">
+        <li><strong>24/7</strong><span>atención automática</span></li>
+        <li><strong>-60%</strong><span>tiempo operativo en recepción</span></li>
+        <li><strong>+30%</strong><span>confirmaciones de cita</span></li>
+      </ul>
+    </section>
+  </header>
+
+  <main>
+    <section id="beneficios" class="section container">
+      <h2>Beneficios clave</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Captación ordenada</h3>
+          <p>Nombre, motivo de consulta, horario preferido y teléfono en un solo flujo estructurado.</p>
+        </article>
+        <article class="card">
+          <h3>Agenda inteligente</h3>
+          <p>Sugiere horarios disponibles y evita cruces en la agenda del equipo.</p>
+        </article>
+        <article class="card">
+          <h3>Recordatorios automáticos</h3>
+          <p>Envía confirmación y recordatorio previo para reducir ausencias.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="demo" class="section section-demo">
+      <div class="container demo-layout">
+        <div>
+          <h2>Demo visual del flujo</h2>
+          <p class="demo-copy">
+            Simulación end-to-end: primer contacto, captura de datos, propuesta de horario, confirmación y recordatorio.
+          </p>
+          <button id="startDemo" class="btn btn-primary">Iniciar demo</button>
+          <button id="resetDemo" class="btn btn-outline">Reiniciar</button>
+          <ol id="timeline" class="timeline"></ol>
+        </div>
+
+        <div class="phone">
+          <div class="phone-top">
+            <span class="dot"></span>
+            <strong>DentalBot SCZ</strong>
+          </div>
+          <div id="chat" class="chat"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container cta">
+  <h2>Activa DentalBot en tu clínica</h2>
+  <p>Implementación rápida con flujo adaptado a tus especialidades y horarios.</p>
+  <a
+   <a
+  class="btn btn-primary"
+  href="https://wa.me/59160881845?text=Hola%2C%20quiero%20ver%20una%20demo%20de%20DentalBot%20SCZ%20para%20mi%20cl%C3%ADnica."
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Solicitar demo guiada
+</a>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© 2026 DentalBot SCZ. Automatización para clínicas dentales.</small>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
