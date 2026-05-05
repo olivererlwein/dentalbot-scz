@@ -198,6 +198,41 @@ h1 {
   max-width: 54ch;
 }
 
+.demo-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.intent-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 8px 0 12px;
+}
+
+.intent-btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #1a3d43;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+
+.intent-btn:hover {
+  border-color: #95c9bf;
+  background: #f4fbf9;
+}
+
+.intent-btn.active {
+  border-color: var(--brand);
+  background: #e8f7f2;
+  color: #0d4f49;
+}
 .timeline {
   margin-top: 18px;
   background: #fff;
@@ -294,6 +329,10 @@ h1 {
   }
 
   .demo-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .intent-buttons {
     grid-template-columns: 1fr;
   }
 

@@ -62,8 +62,16 @@
           <p class="demo-copy">
             Simulación end-to-end: primer contacto, captura de datos, propuesta de horario, confirmación y recordatorio.
           </p>
-          <button id="startDemo" class="btn btn-primary">Iniciar demo</button>
-          <button id="resetDemo" class="btn btn-outline">Reiniciar</button>
+          <div class="demo-actions">
+            <button id="startDemo" class="btn btn-primary">Iniciar demo</button>
+            <button id="resetDemo" class="btn btn-outline">Reiniciar</button>
+          </div>
+          <div id="intentButtons" class="intent-buttons">
+            <button class="intent-btn" data-intent="cleaning">Agendar limpieza dental</button>
+            <button class="intent-btn" data-intent="pricing">Consultar precios</button>
+            <button class="intent-btn" data-intent="reschedule">Reprogramar cita</button>
+            <button class="intent-btn" data-intent="emergency">Urgencia dental</button>
+          </div>
           <ol id="timeline" class="timeline"></ol>
         </div>
 
