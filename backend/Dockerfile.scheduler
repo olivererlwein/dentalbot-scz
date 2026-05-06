@@ -2,11 +2,12 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-COPY backend/scheduler-api-server.js /app/scheduler-api-server.js
+COPY backend/package*.json ./
 
-ENV NODE_ENV=production
-ENV SCHEDULER_PORT=3002
+RUN npm install --omit=dev
 
-EXPOSE 3002
+COPY backend/scheduler-api-server.js ./
+
+EXPOSE 10000
 
 CMD ["node", "scheduler-api-server.js"]
